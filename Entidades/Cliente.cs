@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Cliente
+    public class Cliente : Usuario
     {
-        private int codigo { get; set; }
-
-        private string nombre { get; set; }
-        public Cliente(int code, string name)
+        public Cliente(int codigo, string nombre, string email, string contrasena) : base (codigo, nombre, email, contrasena)
         {
-            codigo = code;
-            nombre = name;
-            Console.WriteLine($"Soy el cliente {name}, codigo: {code}");
+            Console.WriteLine($"Soy el cliente {nombre}, email {email}");
         }
     }
 }

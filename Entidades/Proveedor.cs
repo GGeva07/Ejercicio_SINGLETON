@@ -2,16 +2,11 @@
 
 namespace Entidades
 {
-    public class Proveedor
+    public class Proveedor : Usuario
     {
-        private int Codigo { get; set; }
-        private string Nombre { get; set; }
-
-        public Proveedor(int code, string name)
+        public Proveedor(int codigo, string nombre, string email, string contrasena) : base(codigo, nombre, email, contrasena)
         {
-            Codigo = code;
-            Nombre = name;
-            Console.WriteLine($"Soy el provedor {name}, codigo: {code}");
+            Console.WriteLine($"Soy el Proveedor: {nombre}, email {email}");
         }
     }
 }

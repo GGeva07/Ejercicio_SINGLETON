@@ -8,9 +8,9 @@ namespace Entidades
 {
     public class EmpleadoComun : Empleado
     {
-        public EmpleadoComun(string code, string name, int pass, string depto) : base(code, name, pass, depto)
+        public EmpleadoComun(int code, string name, string email, string pass, string depto) : base(code, name, email, pass, depto)
         {
-            Console.WriteLine($"Soy el empleado: {name}, codigo: {code}, del departamento {depto} ");
+            Console.WriteLine($"Soy el Empleado: {name}, codigo: {code}, del departamento {depto} ");
         }
     }
 }

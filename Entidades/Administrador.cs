@@ -10,16 +10,16 @@ namespace Entidades
     public class Administrador : Empleado
     {
         private static Administrador? admin;
-        private Administrador(string code, string name, int pass, string depto) : base(code, name, pass, depto)
+        private Administrador(int code, string name, string email, string pass, string depto) : base(code, name, email, pass, depto)
         {
             Console.WriteLine($"Soy el administrador: {name}, codigo: {code}, del departamento {depto} ");
         }
 
-        public static Administrador GetAdmin(string code, string name, int pass, string depto)
+        public static Administrador GetAdmin(int code, string name, string email, string pass, string depto)
         {
             if(admin == null)
             {
-                admin = new(code, name, pass, depto);
+                admin = new(code, name,email, pass, depto);
             }
             return admin;
         }

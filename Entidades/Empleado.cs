@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public abstract class Empleado
+    public abstract class Empleado : Usuario
     {
-        private string Codigo { get; set; }
-        private string Nombre { get; set; }
-        private int Constrasena { get; set; }
         private string Departamento { get; set; }
 
-        public Empleado(string code, string name, int pass, string depto)
+        public Empleado(int code, string name, string email, string pass, string depto) : base (code, name, email, pass)
         {
-            Codigo = code;
-            Nombre = name;
-            Constrasena = pass;
             Departamento = depto;
         }
     }
