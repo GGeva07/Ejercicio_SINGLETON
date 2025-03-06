@@ -11,9 +11,8 @@ namespace Interfaz
             Console.WriteLine("");
             Proveedor provedor = new(51646, "Marlen Abreu", "marleen@gmail.com", "awa456");
             Console.WriteLine("");
-
-            Administrador admin = Administrador.GetAdmin(1230003, "Eva Gonzalez", "evaGO07@HOTMAIL.COM", "E7112003", "Software");
             Administrador admin1 = Administrador.GetAdmin(5682005, "Daniel Castro", "Francisco@gmail.com", "26042005", "Software");
+            Administrador admin = Administrador.GetAdmin(1230003, "Eva Gonzalez", "evaGO07@HOTMAIL.COM", "E7112003", "Software");
         }
     }
 }
